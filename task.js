@@ -29,4 +29,19 @@ function make_avg(numbers) {
   return avg;
 }
 const numbers = [10, 20, 50, 30, 60, 56, 90];
-console.log(make_avg(numbers));
+// console.log(make_avg(numbers));
+
+// Task 4
+function make_avg(bina) {
+  const numbers = bina.split("");
+  let zero = 0;
+
+  for (let number of numbers) {
+    if (number == 0) {
+      zero = zero + 1;
+    }
+  }
+  return zero;
+}
+const binary = "010101";
+console.log(make_avg(binary));
