@@ -17,4 +17,16 @@ function oddEven(number) {
   }
 }
 
-console.log(oddEven(21));
+// console.log(oddEven(21));
+
+// task3
+function make_avg(numbers) {
+  let sum = 0;
+  for (let number of numbers) {
+    sum = sum + number;
+  }
+  const avg = sum / numbers.length;
+  return avg;
+}
+const numbers = [10, 20, 50, 30, 60, 56, 90];
+console.log(make_avg(numbers));
